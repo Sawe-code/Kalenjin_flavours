@@ -1,0 +1,218 @@
+.trending {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending__discover p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.trending-sushi,
+.trending-drinks {
+  width: 100%;
+  min-height: 640px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.trending__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 32px 64px;
+}
+
+.trending__list {
+  list-style: none;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending__list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+
+  min-width: 210px;
+}
+
+.trending__icon {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.trending__list p {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+
+  color: var(--secondary-color);
+}
+
+.trending__image {
+  flex: 1;
+
+  position: relative;
+  padding: 32px 64px;
+
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.trending-sushi .trending__image {
+  background-image: url("../../assets/japanese_sushi.png");
+}
+
+.trending-drink .trending__image {
+  background-image: url("../../assets/japanese_drinks.png");
+}
+
+.trending__image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* Arrows */
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow img {
+  object-fit: contain;
+}
+
+.trending__arrow-left {
+  left: -2.5px;
+  top: 12%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+.trending__arrow-top {
+  top: -10.5px;
+  left: 12%;
+}
+
+.trending__arrow-bottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+}
+
+.trending__arrow-right {
+  right: -2.5px;
+  bottom: 12%;
+}
+/* Subtitle styling */
+.sushi__subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem; /* ~18px */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2c5f2d; /* deep earthy green */
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* Decorative underline for subtitle */
+.sushi__subtitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #d9a441; /* golden earthy accent */
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+/* Title styling */
+.sushi__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem; /* ~32px */
+  color: #1b3a2d; /* dark earthy green */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for title */
+.sushi__title:hover {
+  color: #d9a441; /* golden accent */
+}
+
+/* Description styling */
+.sushi__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.trending-sushi .trending__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}

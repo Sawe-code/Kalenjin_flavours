@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalenjin Menu</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-aos="fade-up">
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Kalenjin Flavours</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+        <ul class="header__menu" data-aos="fade-down">
+          <li><a href="/">Home</a></li>
+          <li>
+            <button aria-label="Search">
+              <img src="/assets/search.svg" alt="Search" />
+            </button>
+          </li>
+        </ul>
+
+        <button
+          class="header__menu-mobile"
+          aria-label="Open Menu"
+          data-aos="fade-down"
+        >
+          <img src="/assets/menu.svg" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+
+    <header class="menu-header">
+      <h1>Traditional Kalenjin Menu</h1>
+      <p>Food from the highlands, prepared with pride.</p>
+
+      <div class="cart-indicator">
+        🧺 Basket: <span id="cart-count">0</span>
+      </div>
+    </header>
+
+    <section class="menu-grid">
+      <div class="menu-card">
+        <img src="/assets/nyama-choma.png" alt="Nyama Choma" />
+        <h3>Nyama Choma</h3>
+        <p>Slow-roasted goat meat, Kalenjin style</p>
+        <span>KES 900</span>
+        <button onclick="addToCart('Nyama Choma', 900)">Add to Basket</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="/assets/ugali.png" alt="Millet Ugali" />
+        <h3>Kimnyeet (Millet Ugali)</h3>
+        <p>Stone-ground millet ugali</p>
+        <span>KES 250</span>
+        <button onclick="addToCart('Kimnyeet', 250)">Add to Basket</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="/assets/fav-drink.png" alt="Mursik" />
+        <h3>Mursik</h3>
+        <p>Traditional fermented milk</p>
+        <span>KES 150</span>
+        <button onclick="addToCart('Mursik', 150)">Add to Basket</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="/assets/fav-dish.png" alt="Boiled Meat" />
+        <h3>Boiled Beef</h3>
+        <p>Slow-boiled meat with natural herbs</p>
+        <span>KES 600</span>
+        <button onclick="addToCart('Boiled Beef', 600)">Add to Basket</button>
+      </div>
+    </section>
+
+    <section class="checkout-section">
+      <button class="checkout-btn" onclick="checkoutWhatsApp()">
+        Confirm Order on WhatsApp
+      </button>
+    </section>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

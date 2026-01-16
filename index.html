@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/kalenjin.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Kalenjin Flavours</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Kalenjin Flavours</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+        <ul class="header__menu" data-aos="fade-down">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About us</a></li>
+          <li>
+            <button aria-label="Search">
+              <img src="/assets/search.svg" alt="Search" />
+            </button>
+          </li>
+        </ul>
+
+        <button
+          class="header__menu-mobile"
+          aria-label="Open Menu"
+          data-aos="fade-down"
+        >
+          <img src="/assets/menu.svg" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/hero.png" alt="kalenjin-food" data-aos="fade-up" />
+        <h2 data-aos="fade-up">
+          KA <br />
+          LEN <br />
+          JIN
+        </h2>
+
+        <div class="hero-image__overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Feel the Taste of Kalenjin Flavours</h1>
+          <p>
+            Discover authentic Kalenjin dishes, prepared with tradition, pride,
+            and natural taste — anytime, anywhere.
+          </p>
+
+          <div class="hero-content__buttons">
+            <button class="hero-content__order-button" id="orderLocalBtn">
+              Order Local
+            </button>
+            <button class="hero-content__play-button">
+              <a href="https://youtu.be/xNeaZbwHssc?si=Lj84NAEckrSEy0-F"
+                ><img src="assets/play-circle.svg" alt="play"
+              /></a>
+              How It’s Prepared
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>250<span>k+</span></h4>
+            <p>Happy Families Served</p>
+          </div>
+
+          <div class="hero-content__review">
+            <img src="assets/user.png" alt="user" />
+            <p>"The true taste of home — Kalenjin food done right."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">
+        Popular Dishes / Ekibinget
+      </h2>
+
+      <div class="popular-foods__filters hide-scrollbar" data-aos="fade-up">
+        <button class="popular-foods__filter-btn active">All</button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/ugali.png" alt="ugali" />
+          Ugali
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/nyama-choma.png" alt="nyama choma" />
+          Nyama Choma
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/mukimo.png" alt="mukimo" />
+          Mukimo
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/irio.png" alt="irio" />
+          Irio
+        </button>
+      </div>
+
+      <div class="popular-foods__catalogue" data-aos="fade-up">
+        <article class="popular-foods__card">
+          <img
+            class="popular-foods__card-image"
+            src="assets/ugali.png"
+            alt="ugali and goat"
+          />
+          <h4 class="popular-foods__card-title">Ugali & Braised Goat</h4>
+
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>4.9</p>
+            </div>
+
+            <p class="popular-foods__card-price">$12.00</p>
+          </div>
+        </article>
+
+        <article class="popular-foods__card active-card">
+          <img
+            class="popular-foods__card-image"
+            src="assets/nyama-choma.png"
+            alt="nyama choma"
+          />
+          <h4 class="popular-foods__card-title">Nyama Choma Platter</h4>
+
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>5.0</p>
+            </div>
+
+            <p class="popular-foods__card-price">$15.00</p>
+          </div>
+        </article>
+
+        <article class="popular-foods__card">
+          <img
+            class="popular-foods__card-image"
+            src="assets/mukimo.png"
+            alt="mukimo"
+          />
+          <h4 class="popular-foods__card-title">Mukimo Bowl</h4>
+
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="assets/star.svg" alt="star" />
+              <p>4.7</p>
+            </div>
+
+            <p class="popular-foods__card-price">$10.00</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="popular-foods__button" id="explore">
+        <a href="#food">Explore Dishes</a>
+        <img src="assets/arrow-right.svg" alt="arrow-right" />
+      </button>
+    </section>
+
+    <section class="trending" id="food">
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="sushi__subtitle">What’s Trending / Kalenjin Favorites</p>
+
+          <h3 class="sushi__title">Kalenjin Dishes</h3>
+          <p class="sushi__description">
+            Experience the rich taste of traditional Kalenjin meals.
+          </p>
+
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Roasted Goat</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Millet Ugali</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Smoked Fish</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Vegetable Sukuma</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Milk Tea</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Nyama Choma</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="trending__image flex-center">
+          <img
+            src="assets/fav-dish.png"
+            alt="kalenjin-dish"
+            data-aos="fade-left"
+          />
+
+          <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+
+          <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+        </div>
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Explore</p>
+      </div>
+
+      <section class="trending-drinks">
+        <div class="trending__image flex-center">
+          <img
+            src="assets/fav-drink.png"
+            alt="kalenjin-drink"
+            data-aos="fade-right"
+          />
+
+          <div class="trending__arrow trending__arrow-top">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+
+          <div class="trending__arrow trending__arrow-right">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="sushi__subtitle">What’s Trending / Kalenjin Drinks</p>
+
+          <h3 class="sushi__title">Traditional Drinks</h3>
+          <p class="sushi__description">
+            Refresh yourself with authentic Kalenjin beverages.
+          </p>
+
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Busaa</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Mursik</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Millet Brew</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Honey Tea</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Herbal Infusion</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Chai Masala</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="subscription flex-center" id="services">
+      <h2 data-aos="flip-down">
+        Get Kalenjin recipes <br />
+        straight to your inbox
+      </h2>
+      <p data-aos="fade-up">Sign up for the Kalenjin Flavours newsletter</p>
+
+      <div class="subscription__form" data-aos="fade-up">
+        <form id="subscribeForm">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer flex-between">
+      <h3 class="footer__logo"><span>Kalenjin</span>Flavours</h3>
+
+      <ul class="footer__nav">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Dishes</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="flex-center">
+          <img src="assets/facebook.svg" alt="facebook" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/instagram.svg" alt="instagram" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/twitter.svg" alt="twitter" />
+        </li>
+      </ul>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
