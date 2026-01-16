@@ -44,6 +44,8 @@ function checkoutWhatsApp() {
   updateCartCount();
 }
 
+window.addToCart = addToCart;
+window.checkoutWhatsApp = checkoutWhatsApp;
 updateCartCount();
 
 // document.addEventListener("DOMContentLoaded", () => {
